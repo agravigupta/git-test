@@ -1,13 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "confusion",
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
+=======
+  "name": "git-test",
+  "version": "1.0.0",
+  "description": "This is a test directory to learn Git and Node",
+>>>>>>> 390f2f6d14a27376cf2e1f8417ad8ed02b844346
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
+<<<<<<< HEAD
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -17,5 +24,19 @@
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
+=======
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agravigupta/git-test.git"
+  },
+  "author": "Agravi Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agravigupta/git-test/issues"
+  },
+  "homepage": "https://github.com/agravigupta/git-test#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+>>>>>>> 390f2f6d14a27376cf2e1f8417ad8ed02b844346
   }
 }
