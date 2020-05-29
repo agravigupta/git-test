@@ -40,8 +40,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <button type="submit" class="btn btn-warning"><a href="#card"><strong>Reserve a Table</strong></a></button>
                 </div>
             </div>
         </div>
@@ -56,7 +59,7 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -71,12 +74,12 @@
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/buffet.png" alt="buffet">
+                    
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
                 </div>
                 
             </div>
@@ -101,6 +104,67 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row row-content align-items-center justify-content-center" id="form1">
+        <div class="col-12 col-sm-8 ">
+        <div class="card" id="card">
+            <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+            <div class="card-body">
+                
+                    <form>
+                        <div class="form-group row">
+                            <label for="guests" class="col-md-2 col-form-label">Number of Guests</label>
+                            <div class="col-md-10">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="guest" id="g1" value="">
+                                    <label for="g1" class="col-form-label">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="guest" id="g2">
+                                    <label class="form-check-label" for="g2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="guest" id="g3">
+                                    <label class="form-check-label" for="g3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="guest" id="g4">
+                                    <label class="form-check-label" for="g4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="guest" id="g5">
+                                    <label class="form-check-label" for="g5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="guest" id="g6">
+                                    <label class="form-check-label" for="g6">6</label>
+                                </div>
+                            
+                            </div>
+                        
+                            
+                        </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                
+                                <button type="submit" class="btn btn-primary ml-1">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                
+            </div>
+        </div>
+    
         </div>
     </div>
 
