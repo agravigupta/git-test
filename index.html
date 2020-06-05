@@ -30,7 +30,7 @@
                     <l1 class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></l1> 
                 </ul>
                 <span class="navbar-text">
-                    <a data-target="#loginModal" data-toggle="modal"><span class="fa fa-sign-in"></span> Login</a> 
+                    <a id="loginbtn"><span class="fa fa-sign-in"></span> Login</a> 
                 </span>
             </div>
             
@@ -43,7 +43,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="loginclosebtn">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -84,17 +84,17 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="submit" class="btn btn-block nav-link btn-warning" ><a data-target="#ReserveModal" data-toggle="modal"><strong>Reserve a Table</strong></a></button>
+                    <button type="submit" class="btn btn-block nav-link btn-warning" ><a id="reservebtn"><strong>Reserve a Table</strong></a></button>
                 </div>
             </div>
         </div>
     </header>
-    <div id="ReserveModal" class="modal fade" role="dialog">
+    <div id="tableModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="tableclosebtn">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -414,6 +414,18 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');                    
                 }
+            });
+            $('#loginbtn').click(function(){
+                $('#loginModal').modal('show');
+            });
+            $('#loginclosebtn').click(function(){
+                $('#loginModal').modal('hide');
+            });
+            $('#reservebtn').click(function(){
+                $('#tableModal').modal('show');
+            });
+            $('#tableclosebtn').click(function(){
+                $('#tableModal').modal('hide');
             });
         });
     </script>
